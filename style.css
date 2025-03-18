@@ -1,18 +1,17 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 nav ul li a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    color: #ffffff; /* Blanco para contraste */
-    text-transform: uppercase; /* Hace que todo esté en mayúsculas */
-    letter-spacing: 2px; /* Espaciado entre letras */
-    transition: color 0.3s ease-in-out; /* Efecto suave en el color */
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff; /* Blanco para contraste */
+  text-transform: uppercase; /* Hace que todo esté en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  transition: color 0.3s ease-in-out; /* Efecto suave en el color */
 }
 
-:root{
+:root {
   /*colores*/
   --bitcoin-orange: #f7931a;
   --soft-orange: #ffe9d5;
@@ -23,34 +22,31 @@ nav ul li a {
   --grey: #bababa;
   --off-white: #faf8f7;
   --just-white: #fff;
-  --verdebonito:#1CB698;
-
+  --verdebonito: #1cb698;
 }
-*{
+* {
   box-sizing: border-box;
   font-family: "Work Sans", serif;
   margin: 0;
   padding: 0;
 }
-html{
+html {
   /*lo que hace esto es deslizar pero de forma suave*/
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
 /* menu toda esata parte*/
 
-.contenedor-header{
-  background-color:var(--warm-black) ;
+.contenedor-header {
+  background-color: var(--warm-black);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99; /* Esta caja estará encima de otras con menor z-index */
-
-
 }
 
-.contenedor-header header{
+.contenedor-header header {
   max-width: 100%;
   margin: auto;
   display: flex;
@@ -59,24 +55,23 @@ html{
   padding: 15px 20px;
 }
 /*aqui se puede cambiar el nombre para que parzeca un logo*/
-.contenedor-header .logo a{
-  font-family: 'Courier New', Courier, monospace; 
+.contenedor-header .logo a {
+  font-family: "Courier New", Courier, monospace;
   font-size: 3.6rem;
-  color: #1CB698;
+  color: #1cb698;
   text-shadow: 0px 0px 10px rgba(28, 182, 152, 0.7);
   text-decoration: none;
 }
 
-.contenedor-header header ul{
+.contenedor-header header ul {
   display: flex;
   list-style: none;
   font-size: 2.6rem;
-
 }
 
 /*esto es para modificar el link o el formato link de las listas*/
-.ul-header li a{
-  font-family: 'Poppins', sans-serif;
+.ul-header li a {
+  font-family: "Poppins", sans-serif;
   margin: 0 15px;
   padding: 3px;
   text-align: none;
@@ -87,36 +82,40 @@ html{
   transition: color 0.3s ease-in-out;
 }
 
-.ul-header li a:hover{
-  color: #1CB698; /* Color llamativo al pasar el mouse */
+.ul-header li a:hover {
+  color: #1cb698; /* Color llamativo al pasar el mouse */
   text-shadow: 0px 0px 10px rgba(28, 182, 152, 0.7);
-  }
+}
 
-.nav-responsive{
+.nav-responsive {
   background-color: var(--bitcoin-orange);
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 5px;
-  cursor:pointer;
+  cursor: pointer;
   display: none; /*eszto por que solo aparecera cuadno se realize el responsive*/
 }
 
 /*aqui empieza el incidio es decir toda la informacion de la rppimera section*/
-.inicio{
-  background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-  url(./imagenes/markus-spiske-hvSr_CVecVI-unsplash.jpg);
+.inicio {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(./imagenes/markus-spiske-hvSr_CVecVI-unsplash.jpg);
   background-size: cover; /* Ajusta sin distorsión */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita */
   height: 100vh; /* Ocupa toda la pantalla */
-  
-  color:var(--off-white);
+
+  color: var(--off-white);
   display: flex;
   align-items: center;
 }
 
-.contendor-inicio-baner{
-  background-color:var(--bitcoin-orange);
+.contendor-inicio-baner {
+  background-color: var(--bitcoin-orange);
   padding: 40px;
   max-width: 350px; /* Limita el ancho del contenedor */
   margin: auto; /* Centra horizontalmente */
@@ -124,38 +123,34 @@ html{
   border-radius: 40px; /* Bordes redondeados */
 }
 
-.contendor-inicio-img img{
+.contendor-inicio-img img {
   margin-top: 20px;
-  width: 141px;
-  height: 116px;
+  width: 224px;
+  height: 200px;
   display: block;
   margin: auto;
   /*border-radius: 100%;*/
-
-
 }
 
-.contendor-inicio-baner .contendor-inicio-img{
+.contendor-inicio-baner .contendor-inicio-img {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.inicio .contendor-inicio-baner h1{
+.inicio .contendor-inicio-baner h1 {
   margin-top: 10px;
-  font-size: 2.2rem ;
+  font-size: 2.2rem;
   font-weight: bold;
-  font-family: 'Orbitron', sans-serif;
-  
+  font-family: "Orbitron", sans-serif;
 }
 
-.inicio .contendor-inicio-baner h2{
+.inicio .contendor-inicio-baner h2 {
   margin-top: 10px;
-  font-family: 'Orbitron', sans-serif;
-  
+  font-family: "Orbitron", sans-serif;
 }
 
-.inicio .redes-sociales a{
+.inicio .redes-sociales a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -170,29 +165,27 @@ html{
 }
 
 .inicio .redes-sociales a:hover {
-  background-color: #1CB698;
+  background-color: #1cb698;
 }
-
 
 /*esta es la parte de sobre mi*/
 
-.sobremi{
-  background-color:var(--warm-black);
+.sobremi {
+  background-color: var(--warm-black);
   color: #fff;
   padding: 50px 20px;
 }
-.sobremi .contenedor-sobremi{
+.sobremi .contenedor-sobremi {
   max-width: 1100px;
   margin: auto;
 }
-.sobremi h2{
+.sobremi h2 {
   font-size: 48px;
-  font-family: 'Courier New';
+  font-family: "Courier New";
   text-align: center;
   padding: 20px 0;
-
 }
-.sobremi .contenedor-sobremi p{
+.sobremi .contenedor-sobremi p {
   font-size: 2.2rem;
   line-height: 22px;
   margin-bottom: 20px;
@@ -202,67 +195,65 @@ html{
   color: #1CB698;
   font-weight: bold;
 }*/
-.sobremi .fila{
+.sobremi .fila {
   display: flex;
 }
 
-.sobremi .fila .col
-{ 
-    width: 50%;
+.sobremi .fila .col {
+  width: 50%;
 }
-.sobremi .fila .col h3{
-    font-size: 28px;
-    font-family: 'Orbitron', sans-serif;
-    margin-bottom: 25px;
-    color: #1CB698;
+.sobremi .fila .col h3 {
+  font-size: 28px;
+  font-family: "Orbitron", sans-serif;
+  margin-bottom: 25px;
+  color: #1cb698;
 }
-.sobremi .fila .col ul{
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.5rem;
+.sobremi .fila .col ul {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
-.contenedor-sobremi .datos-personales ul li{
+.contenedor-sobremi .datos-personales ul li {
   font-size: 2rem;
-    margin: 12px 0;
+  margin: 12px 0;
 }
-.datos-personales strong{
-    margin-right: 35px;
-    display: inline-block;
-    color: var(--verdebonito);
-    width: 130px;
-    font-size: 2.0rem;
+.datos-personales strong {
+  margin-right: 35px;
+  display: inline-block;
+  color: var(--verdebonito);
+  width: 130px;
+  font-size: 2rem;
 }
 
 /*aqui la otra columna*/
 
-.contenedor-interes{
-
-    display: flex;
-    flex-wrap: wrap; /*hace que los elementos pasen a una nueva línea si no caben en el ancho disponible.*/
+.contenedor-interes {
+  display: flex;
+  flex-wrap: wrap; /*hace que los elementos pasen a una nueva línea si no caben en el ancho disponible.*/
 }
-.contenedor-interes .intereses{
-    width: 100px;
-    height: 100px;
-    background-color:var(--bitcoin-orange);
-    border-radius: 10px;
-    margin: 0 15px 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
+.contenedor-interes .intereses {
+  width: 100px;
+  height: 100px;
+  background-color: var(--bitcoin-orange);
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 }
-.contenedor-interes .intereses:hover{
-    background-color: #1CB698;
+.contenedor-interes .intereses:hover {
+  background-color: #1cb698;
 }
-.contenedor-interes .intereses i{
-    font-size: 30px;
-    margin-bottom: 10px;
+.contenedor-interes .intereses i {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 /*button*/
 
-.sobremi .a-button{
+.sobremi .a-button {
   text-decoration: none; /* Elimina el subrayado */
   color: inherit; /* Hereda el color del texto del contenedor */
 }
@@ -278,7 +269,6 @@ html{
   color: #fff; /* Color del texto en blanco */
   position: relative; /* Necesario para que los elementos hijos (como .descargacv) se posicionen en relación a este */
   z-index: 10; /* Asegura que el texto del botón esté por encima */
-
 }
 .sobremi button .descargacv {
   position: absolute; /* Se posiciona en relación al botón */
@@ -286,283 +276,302 @@ html{
   left: 0;
   width: 0; /* Inicialmente el ancho es 0, por lo que no se ve */
   height: 100%; /* Cubre todo el alto del botón */
-  background-color: #1CB698; /* Color de la animación (verde agua) */
+  background-color: #1cb698; /* Color de la animación (verde agua) */
   z-index: -1; /* Se coloca detrás del texto del botón */
   transition: 1s; /* Hace que los cambios en width sean animados en 1 segundo */
-  
-  
 }
 
 .sobremi button:hover .descargacv {
   width: 100%; /* Se expande completamente al 100% del botón */
 }
 
-
 /*button*/
 
-
-
-
 /* SECCION S K I L L S */
-.skills{
+.skills {
   background-color: var(--warm-black);
-  color:var(--just-white);
+  color: var(--just-white);
   padding: 50px 20px;
 }
 
-.skills .contenido-seccion{
+.skills .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
 
-.skills h2{
+.skills h2 {
   font-size: 48px;
-  font-family: 'Righteous';
+  font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
-
 }
 
-.skills .fila{
+.skills .fila {
   display: flex;
 }
 
-.skills .fila .col{
+.skills .fila .col {
   width: 50%;
   padding: 0 20px;
 }
 
-.skills .fila .col h3{
+.skills .fila .col h3 {
   font-size: 28px;
-  font-family: 'Righteous';
+  font-family: "Righteous";
   margin-bottom: 25px;
 }
 /*aqui ya enmpieza los colores en los espans*/
 /* ===========================
    Estiliza el nombre de la habilidad
    =========================== */
-   .skills .skill > span {
-    font-weight: bold;  /* Hace que el texto sea negrita */
-    display: block;  /* Convierte el <span> en un elemento de bloque */
-    margin-bottom: 10px;  /* Agrega un margen inferior de 10px */
-  }
-  
-  /* ===========================
+.skills .skill > span {
+  font-weight: bold; /* Hace que el texto sea negrita */
+  display: block; /* Convierte el <span> en un elemento de bloque */
+  margin-bottom: 10px; /* Agrega un margen inferior de 10px */
+}
+
+/* ===========================
      Barra de progreso (Fondo)
      =========================== */
-  .skills .skill .barra-skill {
-    height: 8px;  /* Altura de la barra */
-    width: 80%;  /* La barra ocupa el 80% del ancho del contenedor */
-    background-color: #131517;  /* Color de fondo oscuro */
-    position: relative;  /* Permite que los elementos hijos se posicionen de manera absoluta */
-    margin-bottom: 30px;  /* Agrega espacio entre barras */
-  }
-  
-  /* ===========================
+.skills .skill .barra-skill {
+  height: 8px; /* Altura de la barra */
+  width: 80%; /* La barra ocupa el 80% del ancho del contenedor */
+  background-color: #131517; /* Color de fondo oscuro */
+  position: relative; /* Permite que los elementos hijos se posicionen de manera absoluta */
+  margin-bottom: 30px; /* Agrega espacio entre barras */
+}
+
+/* ===========================
      Barra de progreso (Parte que se llena)
      =========================== */
-  .skills .skill .progreso {
-    background-color:var(--bitcoin-orange);  /* Color verde turquesa */
-    position: absolute;  /* Se posiciona dentro de .barra-skill */
-    top: 0;  /* Se alinea en la parte superior */
-    left: 0;  /* Comienza desde la izquierda */
-    height: 8px;  /* Mantiene la misma altura que la barra */
-  }
-  
-  /* ===========================
+.skills .skill .progreso {
+  background-color: var(--bitcoin-orange); /* Color verde turquesa */
+  position: absolute; /* Se posiciona dentro de .barra-skill */
+  top: 0; /* Se alinea en la parte superior */
+  left: 0; /* Comienza desde la izquierda */
+  height: 8px; /* Mantiene la misma altura que la barra */
+}
+
+/* ===========================
      Indicador circular con porcentaje
      =========================== */
-  .skills .skill .barra-skill span {
-    position: absolute;  /* Se posiciona dentro de .barra-skill */
-    height: 40px;  /* Tamaño del círculo */
-    width: 40px;  /* Tamaño del círculo */
-    background-color: var(--bitcoin-orange);  /* Color de fondo verde */
-    border-radius: 50px;  /* Hace que el div sea un círculo */
-    line-height: 40px;  /* Centra el texto verticalmente dentro del círculo */
-    text-align: center;  /* Centra el texto horizontalmente */
-    top: -17px;  /* Lo sube 17px por encima de la barra */
-    right: -15px;  /* Lo mueve ligeramente a la derecha */
-    font-size: 14px;  /* Tamaño del texto */
-  }
-  
-.skills .skill .javascript{
-    width: 0%;
-    animation: 4s javascript forwards;
+.skills .skill .barra-skill span {
+  position: absolute; /* Se posiciona dentro de .barra-skill */
+  height: 40px; /* Tamaño del círculo */
+  width: 40px; /* Tamaño del círculo */
+  background-color: var(--bitcoin-orange); /* Color de fondo verde */
+  border-radius: 50px; /* Hace que el div sea un círculo */
+  line-height: 40px; /* Centra el texto verticalmente dentro del círculo */
+  text-align: center; /* Centra el texto horizontalmente */
+  top: -17px; /* Lo sube 17px por encima de la barra */
+  right: -15px; /* Lo mueve ligeramente a la derecha */
+  font-size: 14px; /* Tamaño del texto */
+}
+
+.skills .skill .javascript {
+  width: 0%;
+  animation: 4s javascript forwards;
 }
 
 @keyframes javascript {
-  0%{width: 0%;}
-  100%{width: 75%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
 }
 
-.skills .skill .HTML{
+.skills .skill .HTML {
   width: 0%;
   animation: 4s HTML forwards;
 }
 
 @keyframes HTML {
-0%{width: 0%;}
-100%{width: 80%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
-.skills .skill .python{
+.skills .skill .python {
   width: 0%;
   animation: 4s python forwards;
 }
 
 @keyframes python {
-0%{width: 0%;}
-100%{width: 70%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
 }
 
-.skills .skill .MySQL{
+.skills .skill .MySQL {
   width: 0%;
   animation: 4s MySQL forwards;
 }
 
 @keyframes MySQL {
-0%{width: 0%;}
-100%{width: 60%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
 
-.skills .skill .Trabajo{
+.skills .skill .Trabajo {
   width: 0%;
   animation: 4s Trabajo forwards;
 }
 
 @keyframes Trabajo {
-0%{width: 0%;}
-100%{width: 95%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
 }
 
-.skills .skill .Comunicación{
+.skills .skill .Comunicación {
   width: 0%;
   animation: 4s Comunicación forwards;
 }
 
 @keyframes Comunicación {
-0%{width: 0%;}
-100%{width: 90%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
 }
-.skills .skill .creatividad{
+.skills .skill .creatividad {
   width: 0%;
   animation: 4s creatividad forwards;
 }
 
 @keyframes creatividad {
-0%{width: 0%;}
-100%{width: 80%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
-.skills .skill .Dedicacion{
+.skills .skill .Dedicacion {
   width: 0%;
   animation: 4s Dedicacion forwards;
 }
 
 @keyframes Dedicacion {
-0%{width: 0%;}
-100%{width: 100%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
 
 /*curriculum*/
 
-.curriculum{
-  background-color:var(--bitcoin-orange);
+.curriculum {
+  background-color: var(--bitcoin-orange);
   color: #fff;
   padding: 50px 20px;
 }
-.curriculum .contenido-seccion{
+.curriculum .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
-.curriculum h2{
+.curriculum h2 {
   font-size: 48px;
-  font-family: 'Righteous';
+  font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
-
 }
-.curriculum .fila{
+.curriculum .fila {
   display: flex;
   justify-content: space-between;
 }
 
-
-.curriculum .fila .col{
+.curriculum .fila .col {
   width: 49%;
   padding: 0 20px;
 }
 
-.curriculum .fila .col h3{
+.curriculum .fila .col h3 {
   font-size: 29px;
-  font-family: 'Righteous';
+  font-family: "Righteous";
   margin-bottom: 25px;
 }
 
-.curriculum .fila .item{
+.curriculum .fila .item {
   padding: 25px;
   margin-bottom: 30px;
-  background-color: #252A2E;
+  background-color: #252a2e;
   position: relative;
 }
 
-
-.curriculum .fila .item h4{
+.curriculum .fila .item h4 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.curriculum .fila .item .casa{
-  color: #1CB698;
+.curriculum .fila .item .casa {
+  color: #1cb698;
   font-size: 22px;
   font-weight: bold;
   display: block;
 }
- 
-.curriculum .fila .item .fecha{
+
+.curriculum .fila .item .fecha {
   display: block;
-  color: #1CB698;
+  color: #1cb698;
   margin-bottom: 10px;
 }
 
-.curriculum .fila .item p{
+.curriculum .fila .item p {
   line-height: 22px;
 }
 
-.curriculum .fila .izq{
- 
+.curriculum .fila .izq {
   margin-right: 20px;
 }
 
-.curriculum .fila .der{
-  
+.curriculum .fila .der {
   margin-left: 20px;
 }
 
 /* SECCION PORTFOLIO */
-.portfolio{
-  background-color: #252A2E;
+.portfolio {
+  background-color: #252a2e;
   color: #fff;
   padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
+.portfolio .contenido-seccion {
   max-width: 1100px;
   margin: auto;
 }
-.portfolio h2{
+.portfolio h2 {
   font-size: 48px;
-  font-family: 'Righteous';
+  font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
 }
 
-.portfolio .galeria{
+.portfolio .galeria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.portfolio .galeria .proyecto{
+.portfolio .galeria .proyecto {
   position: relative;
   max-width: 340px;
   height: fit-content;
@@ -570,18 +579,21 @@ html{
   cursor: pointer;
 }
 
-.portfolio .galeria .proyecto img{
+.portfolio .galeria .proyecto img {
   width: 100%;
   display: block;
 }
 
-.portfolio .galeria .proyecto .overlay{
+.portfolio .galeria .proyecto .overlay {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   text-align: center;
-  background: linear-gradient(rgba(186, 199, 197, 0.8), rgba(28,182,152,.8));
+  background: linear-gradient(
+    rgba(186, 199, 197, 0.8),
+    rgba(28, 182, 152, 0.8)
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -596,24 +608,22 @@ html{
   display: block; /* Hace que el enlace abarque toda el área del contenedor */
 }
 
-
-
-.portfolio .galeria .proyecto .overlay h3{
+.portfolio .galeria .proyecto .overlay h3 {
   margin-bottom: 20px;
   transition: 1s;
 }
 
-.portfolio .galeria .proyecto .overlay:hover{
+.portfolio .galeria .proyecto .overlay:hover {
   opacity: 1;
 }
 
-.portfolio .galeria .proyecto .overlay:hover h3{
+.portfolio .galeria .proyecto .overlay:hover h3 {
   margin-bottom: 0px;
 }
 
 /*foooterrrrrrrrrrrrrrr*/
-footer{
-  background-color: #252A2E;
+footer {
+  background-color: #252a2e;
   color: #fff;
   padding: 50px 0 30px 0;
   text-align: center;
@@ -621,11 +631,11 @@ footer{
   width: 100%;
 }
 
-footer .redes{
+footer .redes {
   margin-bottom: 20px;
 }
 
-footer .redes a{
+footer .redes a {
   color: #fff;
   display: inline-block;
   text-decoration: none;
@@ -636,14 +646,14 @@ footer .redes a{
   line-height: 42px;
   margin: 40px 5px;
   font-size: 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-footer .arriba{
+footer .arriba {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #1CB698;
+  background-color: #1cb698;
   color: #fff;
   position: absolute;
   left: 50%;
@@ -654,8 +664,13 @@ footer .arriba{
   font-size: 18px;
 }
 @keyframes subirBajar {
-  0%, 100% { top: -25px; }
-  50% { top: -30px; }
+  0%,
+  100% {
+    top: -25px;
+  }
+  50% {
+    top: -30px;
+  }
 }
 
 footer .arriba {
@@ -665,70 +680,70 @@ footer .arriba {
 /*aqui el responsive*/
 /* SECCION RESPONSIVE */
 
-@media screen and (max-width:980px){
-  nav{
-      display: none;
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
   }
-  
-  .nav-responsive{
-      display: block;
+
+  .nav-responsive {
+    display: block;
   }
-  
-  nav.responsive{
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 75px;
-      background-color: #252A2E;
-      width: 180px;
+
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 180px;
   }
-  
-  nav.responsive ul{
-      display: block !important;
+
+  nav.responsive ul {
+    display: block !important;
   }
-    
-  nav.responsive ul li{
-      border-bottom: 1px solid #fff;
-      padding: 10px 0;
+
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
   }
 }
 
-@media screen and (max-width:700px){
-  .sobremi .fila{
-      display: block;
+@media screen and (max-width: 700px) {
+  .sobremi .fila {
+    display: block;
   }
-  .sobremi .fila .col{
-      width: fit-content;
-  }
-
-  .skills .fila{
-      display: block;
-  }
-  .skills .fila .col{
-      width: 100%;
-  }
-  .skills .fila .col .barra-skill{
-      width: 100%;
+  .sobremi .fila .col {
+    width: fit-content;
   }
 
-  .curriculum .fila{
-      display: block;
+  .skills .fila {
+    display: block;
   }
-  .curriculum .fila .col{
-      width: 90%;
+  .skills .fila .col {
+    width: 100%;
   }
-  .curriculum .fila .derecha{
-      margin-left: 20px;
+  .skills .fila .col .barra-skill {
+    width: 100%;
   }
 
-  .portfolio .galeria{
-      display: block;
-      width: 100%;
+  .curriculum .fila {
+    display: block;
   }
-  .portfolio .galeria .proyecto{
-      max-width: 100%;
+  .curriculum .fila .col {
+    width: 90%;
   }
-  .portfolio .galeria .proyecto img{
-      width: 100%;
+  .curriculum .fila .derecha {
+    margin-left: 20px;
+  }
+
+  .portfolio .galeria {
+    display: block;
+    width: 100%;
+  }
+  .portfolio .galeria .proyecto {
+    max-width: 100%;
+  }
+  .portfolio .galeria .proyecto img {
+    width: 100%;
   }
 }
