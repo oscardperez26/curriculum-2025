@@ -16,17 +16,13 @@ function seleccionar() {
   menuVisible = false;
 }
 /**slider ceritficaicones */
-let index = 0;
-
-function moveSlide(step) {
+document.addEventListener("DOMContentLoaded", function () {
+  let index = 0;
   const slides = document.querySelector(".slides");
   const totalSlides = document.querySelectorAll(".slide").length;
 
-  index += step;
-  if (index < 0) index = totalSlides - 1;
-  if (index >= totalSlides) index = 0;
-
-  slides.style.transform = `translateX(${-index * 100}%)`;
-}
-
-setInterval(() => moveSlide(1), 3000);
+  window.moveSlide = function (step) {
+    index = (index + step + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  };
+});
