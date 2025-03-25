@@ -747,3 +747,43 @@ footer .arriba {
     width: 100%;
   }
 }
+
+/*slider*/
+.slider {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
